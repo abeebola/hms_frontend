@@ -78,7 +78,7 @@ h2 small {
 /* Site specific */
 
 thead {
-  background-color: #03A9F4;
+  background-color: #2d2d2d;
   color: #fff;
 }
 
@@ -322,7 +322,7 @@ thead th {
 }
 
 .menu-item > .active {
-    color: #03a9f4;
+    color: #F44336;
 }
 
 
@@ -356,7 +356,7 @@ thead th {
   color: #fff;
 }
 
-.bblue>*, .bred>* {
+.bblue>span, .bred>span {
   display: inherit;
 }
 

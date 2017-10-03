@@ -141,6 +141,7 @@ header span {
 }
 
 .logout {
+  color: #e8e8e8;
   float: right;
   font-size: 16px;
   font-weight: 200;
@@ -153,7 +154,7 @@ header span {
 }
 
 .logout:hover {
-  color: #FF9800;
+  color: #fff;
 }
 
 .side-menu {
