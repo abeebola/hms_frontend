@@ -3,7 +3,7 @@
         <transition enter-active-class="fade-in" leave-active-class="fade-out">
             <div class="modal flex" v-if="! dataLoaded">
                 <div class="dialog">
-                    <span class="spinner s bdblue"></span>
+                    <span class="spinner s bdred"></span>
                     <span>Loading...</span>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                     <div v-if="searchLoading">
                         <hr>
                         <div class="loader">
-                            <span class="spinner s bdblue"></span>
+                            <span class="spinner s bdred"></span>
                             <span>Searching...</span>
                         </div>
                     </div>

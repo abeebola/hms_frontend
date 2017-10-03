@@ -94,7 +94,7 @@ html {
   right: 0;
   z-index: 555;
   margin: 0;
-  background-color: #0071c9;
+  background-color: #ec1505;
   color: #ffffff;
 }
 </style>

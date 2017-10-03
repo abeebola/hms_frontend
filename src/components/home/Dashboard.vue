@@ -98,7 +98,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <button class="form-control btn bblue" type="button" :disabled="btnDisabled" @click="save()">
+                        <button class="form-control btn bred" type="button" :disabled="btnDisabled" @click="save()">
                             <span class="txt" v-if="!showLoader">Save</span>
                             <span class="spinner" v-else></span>
                         </button>
@@ -118,7 +118,7 @@
                     <div class="camera">
                         <video id="video" autoplay="true">Video stream not available.</video>
                         <span>
-                            <button id="startbutton" class="btn bblue" @click.stop="takePicture">
+                            <button id="startbutton" class="btn bred" @click.stop="takePicture">
                                 <i class="fa fa-camera"></i> Take photo</button>
                         </span>
                     </div>

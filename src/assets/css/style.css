@@ -342,12 +342,21 @@ thead th {
   border-color: #2196F3 !important;
 }
 
+.bdred {
+  border-color: #F44336 !important;
+}
+
 .bblue {
   background-color: #2196F3;
   color: #fff;
 }
 
-.bblue>* {
+.bred {
+  background-color: #F44336;
+  color: #fff;
+}
+
+.bblue>*, .bred>* {
   display: inherit;
 }
 
@@ -357,6 +366,11 @@ thead th {
 
 .bblue:hover {
   background-color: #0071c9;
+  color: #fff;
+}
+
+.bred:hover {
+  background-color: #ec1505;
   color: #fff;
 }
 

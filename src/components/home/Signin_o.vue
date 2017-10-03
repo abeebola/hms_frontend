@@ -1,11 +1,11 @@
 <template>
     <div id="fb">
         <div class="s-box">
-            <div class="l">
+            <div>
                 <div class="logo">
                     <img src="/static/img/harmony.jpeg" alt="" class="img-responsive">
                 </div>
-                <br>
+                <h3 class="text-center">Log in</h3><br>
                 <form action="/login" method="post" class="form" @submit.prevent="signin()">
                     <div class="form-group">
                         <label for="username" class="sr-only">
@@ -19,7 +19,7 @@
                         </label>
                         <input type="password" name="password" placeholder="Password" class="form-control" v-model="login.password">
                     </div>
-                    <button class="form-control btn bred" :disabled="btnDisabled">
+                    <button class="form-control btn bblue" :disabled="btnDisabled">
                         <span class="txt" v-if="!showLoader">Log in</span>
                         <span class="spinner" v-else></span>
                     </button>
@@ -109,11 +109,26 @@ export default {
     margin: 150px auto 0;
 }
 
-.l {
-    padding: 10px;
-    background-color: white;
-    box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.49);
-    border-radius: 3px;
+.s-box>h3 {
+    color: #fff;
+}
+
+.s-box input {
+    background-color: rgba(33, 12, 11, 0.23);
+    border-color: rgba(33, 12, 11, 0.3);
+    color: #fff;
+}
+
+.s-box input:focus {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #FF9800;
+}
+
+ ::-webkit-input-placeholder {
+    color: #d6d6d6;
+}
+
+ :-moz-placeholder {
+    color: #d6d6d6;
 }
 
 .error {
@@ -127,7 +142,6 @@ export default {
     font-size: 85%;
     line-height: 30px;
 }
-
 
 
 /* .error > span {

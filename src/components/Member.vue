@@ -3,7 +3,7 @@
         <transition enter-active-class="fade-in" leave-active-class="fade-out">
             <div class="modal flex" v-if="! dataLoaded">
                 <div class="dialog">
-                    <span class="spinner s bdblue"></span>
+                    <span class="spinner s bdred"></span>
                     <span>Loading...</span>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                                 <div class="pimg">
                                     <img :src="`${this.BASE_URL}/static/img/profile/_s/${person.img}`" alt="" class="img-responsive">
                                 </div>
-                                <!-- <button type="button" class="form-control btn bblue mgt10" @click="printCard">Print</button> -->
+                                <!-- <button type="button" class="form-control btn bred mgt10" @click="printCard">Print</button> -->
                             </div>
                             <div class="col-sm-6 pull-left">
                                 <table class="table fw">

@@ -2,7 +2,7 @@
     <div class="mw1200 sp15 pdt15">
         <transition enter-active-class="fade-in" leave-active-class="fade-out">
             <div class="loader" v-if=" ! dataLoaded">
-                <span class="spinner s bdblue"></span>
+                <span class="spinner s bdred"></span>
                 <span>Getting information...</span>
             </div>
             <div v-else class="mw600">
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                     <div class="form-group">
-                        <button class="btn bblue form-control" :disabled="btnDisabled">
+                        <button class="btn bred form-control" :disabled="btnDisabled">
                             <span class="txt" v-if="!showLoader">Update profile</span>
                             <span class="spinner" v-else></span>
                         </button>

@@ -3,7 +3,7 @@
         <transition enter-active-class="fade-in" leave-active-class="fade-out">
             <div class="modal flex" v-if="! dataLoaded">
                 <div class="dialog">
-                    <span class="spinner s bdblue"></span>
+                    <span class="spinner s bdred"></span>
                     <span>Loading...</span>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                                     </div>
                                     <div class="col-sm-3 form-group">
                                         <div class="row">
-                                            <button class="btn bblue form-control">
+                                            <button class="btn bred form-control">
                                                 <span class="txt" v-if="!showLoader">Add</span>
                                                 <span class="spinner" v-else></span>
                                             </button>

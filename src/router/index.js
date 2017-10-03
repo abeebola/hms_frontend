@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Associations from '@/components/Associations'
-import Hello from '@/components/Hello'
 import Home from '@/components/Home'
 import Member from '@/components/Member'
 import Members from '@/components/Members'
