@@ -1,0 +1,8 @@
+{
+    "development": {
+        "base_url": "http://localhost:9800"
+    },
+    "production": {
+        "base_url": ""
+    }
+}

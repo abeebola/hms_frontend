@@ -155,23 +155,17 @@ export default {
             if (this.$route.query.print !== undefined)
                 this.print = true
             else this.print = false
-            // this.print = true;
-            // this.$store.commit('hideHeader')
-            // this.$store.commit('hideSideMenu')
         },
         printCard() {
             this.$router.push({ path: `/members/${this.$route.params.id}/`, query: { print: 'true' } })
         },
     },
-    mounted() {
-        // console.log(this.members);
-    }
 }
 </script>
 
 <style scoped>
 .table td {
-    padding: 8px 0;
+    padding: 8px 4px;
     border: none;
 }
 

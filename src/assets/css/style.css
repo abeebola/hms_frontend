@@ -77,6 +77,10 @@ h2 small {
 
 /* Site specific */
 
+.table-hover>tbody>tr:hover {
+  background-color: rgba(216, 20, 5, 0.11);
+}
+
 thead {
   background-color: #2d2d2d;
   color: #fff;

@@ -5,6 +5,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
+import config from './config'
 
 const logInCheck = () => {
   return localStorage.getItem('laa_uid')
@@ -40,7 +41,7 @@ Vue.mixin({
   },
   data() {
     return {
-      BASE_URL: 'http://localhost:9800',
+      BASE_URL: config().base_url,
     }
   },
   methods: {
