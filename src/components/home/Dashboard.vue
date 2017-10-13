@@ -237,14 +237,11 @@ export default {
             // Reset any previous errors
             this.err_msg = ''
             this.showLoader = true
-            console.log(this.userData)
             this.validateData()
             if (this.err_msg !== '') {
                 this.showLoader = false
                 return this.showErrors()
             }
-
-            console.log(this.userData)
 
             let userData = this.userData
             userData.img_url = this.imgUrl
@@ -260,7 +257,6 @@ export default {
                 .then(res => {
                     return this.handleResponse(res)
                 }).then(res => {
-                    console.log(res)
                     this.showLoader = false
                     if (res.success == 1){
                         alert('Added successfully.')

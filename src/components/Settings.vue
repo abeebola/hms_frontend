@@ -67,7 +67,6 @@ export default {
         fetch(`${this.BASE_URL}/profile?uid=${this.isLoggedIn}`)
             .then(res => this.handleResponse(res))
             .then(res => {
-                console.log(res)
                 this.loadUserInfo(res)
                 this.person = res;
                 this.dataLoaded = true;
@@ -123,7 +122,6 @@ export default {
             fetch(`${this.BASE_URL}/profile`, opts)
             .then(res => this.handleResponse(res))
             .then(res => {
-                console.log(res)
                 this.loadUserInfo(res)
                 this.person = res;
                 this.showLoader = false;                
