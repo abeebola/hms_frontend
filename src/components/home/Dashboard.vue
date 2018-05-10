@@ -2,7 +2,7 @@
     <div class="mw1200 sp15 pdt15">
         <form id="mform" action="/register" class="form" method="post">
             <h3 class="text-center">
-                Staff Registration Form
+                Member Registration Form
             </h3>
             <transition enter-active-class="fade-in" leave-active-class="fade-out">
                 <p v-show="err_msg !== ''" class="text-center pdt10">
